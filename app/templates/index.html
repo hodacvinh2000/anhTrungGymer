@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content%}
+<h3>Bảng dữ liệu </h3>
+<table border="1">
+    <thead>
+        <th>User.id</th>
+        <th>User.username</th>
+        <th>Post.id</th>
+        <th>Post.content</th>
+    </thead>
+    {%for user in luser%}
+        <tbody>
+            <td>{{user.id}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.id}}</td>
+            <td>{{user.content}}</td>
+        </tbody>
+    {% endfor%}
+</table>
+            
+{% endblock%}

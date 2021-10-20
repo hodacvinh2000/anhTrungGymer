@@ -1,0 +1,23 @@
+<html>
+        <head>
+            {% if title %}
+            <title> {{ title }} - First App</title>
+            {% else %}
+            <title> Welcome to homepage </title>
+            {% endif %}
+            <style>
+                th {
+                    padding-left: 30px;
+                }
+                td {
+                    padding-left: 30px;
+                }
+            </style>
+        </head>
+        <body>
+            
+            {% block content%}
+            
+            {% endblock%}
+        </body>
+</html>
